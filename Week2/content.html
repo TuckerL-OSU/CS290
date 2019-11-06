@@ -1,0 +1,178 @@
+<!-- Tucker Lavell CS290 Spring 2018, HTML/CSS Homework -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Tucker Lavell HTML/CSS HW</title>
+		<!-- some contents were borrowed from lectures/instructor resources -->
+		<!-- some CSS taken from W3 or StackOverflow or similar site -->
+		<link rel="stylesheet" href="style.css" type="text/css">
+	</head>
+	<body>
+		<table id='GradeTable'>
+			<caption>Classes I Have Taken, and their Grade</caption>
+			<thead>
+				<tr id='row1'>
+					<th id='col1'> </th>
+					<th>A</th>
+					<th>B</th>
+					<th>C</th>
+					<th>D</th>
+					<th>F</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr id='row2'>
+					<th id='col1'>CS161</th>
+					<td>N/A</td>
+					<td id='grade'>B-</td>
+					<td>N/A</td>
+					<td>N/A</td>
+					<td>N/A</td>
+				</tr>
+				<tr id='row3'>
+					<th id='col1'>CS162</th>
+					<td id='grade'>A</td>
+					<td>N/A</td>
+					<td>N/A</td>
+					<td>N/A</td>
+					<td>N/A</td>
+				</tr>
+				<tr id='row4'>
+					<th id='col1'>CS261</th>
+					<td>N/A</td>
+					<td id='grade'>B-</td>
+					<td>N/A</td>
+					<td>N/A</td>
+					<td>N/A</td>
+				</tr>
+				<tr id='row5'>
+					<th id='col1'>CS271</th>
+					<td id='grade'>A-</td>
+					<td>N/A</td>
+					<td>N/A</td>
+					<td>N/A</td>
+					<td>N/A</td>	
+				</tr>
+				<tr id='row6'>
+					<th id='col1'>CS352</th>
+					<td>N/A</td>
+					<td id='grade'>B+</td>
+					<td>N/A</td>
+					<td>N/A</td>
+					<td>N/A</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr id='row7'>
+					<th colspan="2">GPA:</th>
+					<td colspan="4">B+</td>
+			</tfoot>
+		</table>
+		
+		<dl id='favorites'>
+			<dt>Favorite Food:</dt>
+			<dd>Soup</dd>
+			<dt>Favorite Vacation:</dt>
+			<dd>Disney World</dd>
+			<dt>Favorite Candy Bar:</dt>
+			<dd>KitKat</dd>
+		</dl>
+		
+		<div class='outer-content'>
+			<div class='inner-content'>This is inner div content</div>	
+		</div>
+		
+		<form class='POSTform'action='http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php' method = 'post'>
+			<fieldset>
+				<legend>POST Form</legend>
+				<fieldset>
+					<label>Text Input:
+						<input type='text' name='text_input' />
+					</label>
+					<br />
+				</fieldset>
+				<br />
+				<fieldset>
+					<label>Number Input:
+						<input type='text' name='numerical_input' />
+					</label>
+					<br />
+				</fieldset>
+				<br />
+				<fieldset>
+					<label>Password Input:
+						<input type='text' name='password_input' />
+					</label>
+					<br />
+				</fieldset>
+				<br />
+				<fieldset>
+					<label>Select between:</label>
+					<br />
+					<label>
+						<input type='radio' name='candy' value='Snickers' />Snickers
+					</label>
+					<br />
+					<label>
+						<input type='radio' name='candy' value='Skittles' />Skittles
+					</label>
+					<br />
+					<label>
+						<input type='radio' name='candy' value='Mentos' />Mentos
+					</label>
+					<br />
+				</fieldset>
+				<br />
+				<input type='submit' value="Submit" />
+			</fieldset>
+		</form>
+		
+		<br />
+		
+		<form class='GETform' action='http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php' method = 'get'>
+			<fieldset>
+				<legend>GET Form</legend>
+				<fieldset>
+					<label>Text Input:
+						<input type='text' name='text_input' />
+					</label>
+					<br />
+				</fieldset>
+				<br />
+				<fieldset>
+					<label>Number Input:
+						<input type='text' name='numerical_input' />
+					</label>
+					<br />
+				</fieldset>
+				<br />
+				<fieldset>
+					<label>Password Input:
+						<input type='text' name='password_input' />
+					</label>
+					<br />
+				</fieldset>
+				<br />
+				<fieldset>
+					<label>Select between:</label>
+					<br />
+					<label>
+						<input type='radio' name='candy' value='Snickers' />Snickers
+					</label>
+					<br />
+					<label>
+						<input type='radio' name='candy' value='Skittles' />Skittles
+					</label>
+					<br />
+					<label>
+						<input type='radio' name='candy' value='Mentos' />Mentos
+					</label>
+					<br />
+				</fieldset>
+				<br />
+				<input type='submit' value="Submit" />
+			</fieldset>
+		</form>
+	</body>
+</html>

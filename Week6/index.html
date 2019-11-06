@@ -1,0 +1,52 @@
+<!-- Tucker Lavell
+	CS290 - Spring 2018
+ 	Week6 - Ajax-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Tucker Lavell AJAX HW</title>
+		<!-- <link rel="stylesheet" href="style.css" type="text/css"> -->
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<legend>Search Weather</legend>
+				<p>Look up the weather by ZIP code or City, State (US ONLY)</p>
+				<label for="zipCode">By Zip:</label>
+					<input type="text" name="zipCode" id="zipCode">
+				<input type="submit" id="zipSubmit">
+				<br />
+				<br />
+				<label for="city">City</label>
+					<input type="text" name="city" id="city">
+				<label for="state">State:</label>
+					<input type="text" name="state" id="state">
+				<input type="submit" id="cityStateSubmit">
+			</fieldset>
+		</form>
+		<div>
+			<h2>Weather Result:</h2>
+				<ul>
+					<li><span>City: </span><span id="cityResult"></span></li>
+					<li><span>Temperature: </span><span id="tempResult"></span></li>
+					<li><span>Humidity: </span><span id="humidityResult"></span></li>
+				</ul>
+		</div>
+		<form>
+			<fieldset>
+				<legend>httpbin.org Test</legend>
+				<label for="data">Type anything here:</label>
+					<input type="text" name="data" id="data">
+				<input type="submit" id="dataSubmit">
+				<br />
+			</fieldset>
+		</form>
+		<div>
+			<h2>httpbin.org Result:</h2>
+				<p>You entered: <span id="dataResult"></span></p>
+		</div>
+		
+		<script src="functions.js"></script>
+	</body>
+</html>

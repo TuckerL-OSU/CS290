@@ -1,0 +1,48 @@
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px solid black;
+	text-align: center;
+}
+
+tr {
+	background-color: coral;
+}
+
+tr:nth-of-type(2n) {
+	background-color: orange;
+}
+
+#GradeTable thead tr {
+	background-color: white;
+}
+
+#GradeTable tfoot tr {
+	background-color: white;
+}
+
+#col1 {
+	font-weight: normal;
+	font-style: italic;
+}
+
+#grade {
+	color: white;
+}
+
+.outer-content {
+	left: 0px;
+	width: 75%;
+	background-color: pink;
+	padding: 20px;
+}
+
+.inner-content {
+	margin: auto;
+	width: 75%;
+	text-align: center;
+	background-color: blue;
+	display: outer-content;
+}

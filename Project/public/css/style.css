@@ -1,0 +1,13 @@
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+	  /* set the height so the carousel isnt too long on the page*/
+      height: 600px;
+  }
+  
+  pre {
+	  background-color: #d9d9d9;
+	  border-radius: 10px;
+	  padding: 10px;
+	  overflow-x: scroll;
+  }
